@@ -1,6 +1,7 @@
 body{
+    width: 50%;
 border: 3px solid rgb(43, 32, 22);
-margin: 30px 600px;
+margin: 30px auto;
 text-align: center;
 padding: 15px;
 font-family: Arial, Helvetica, sans-serif; 
@@ -96,3 +97,11 @@ text-align: left;
     margin: 0px 40px 0px 0px;  
     border-bottom: 1px solid rgb(97, 100, 101);
 }
+
+@media only screen and (max-width: 600px) {
+  body{
+    width:90%;
+    border:none;
+  }
+  }
+  
