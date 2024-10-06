@@ -1,5 +1,5 @@
 body{
-    width: 50%;
+width: 50%;
 border: 3px solid rgb(43, 32, 22);
 margin: 30px auto;
 text-align: center;
@@ -7,7 +7,7 @@ padding: 15px;
 font-family: Arial, Helvetica, sans-serif; 
 }
 
-#main-heading{
+#mainHeading{
 margin: 10px 0px; 
 color: rgb(41, 23, 11);
 font-size: 36px;
@@ -15,45 +15,58 @@ width: 100%;
 background-color: #eae8e4;
 }
 
-.heading-link{
+.headingLink{
 color: rgb(41, 23, 11);
 text-decoration: none;
 }
 
-.heading-list{
+.headingList{
 display: inline; 
 float: left;
 width:48%;
 }
 
-.form-two{
+.formTwo{
 clear:both;
 text-align: left;
 padding-top: 20px;
 margin:40px;
 }
 
-#todo-header{
+#todoForm{
+    display: flex;
+}
+
+#userTodo{
+    width:80%;
+    border-radius: 5px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.formFields{
+    padding: 5px;
+    color:  rgb(236, 232, 226);
+    font-weight: bolder;
+    font-size:small;
+}
+
+#todoHeading{
 color: rgb(41, 23, 11);
 font-size: 24px;
+}
+
+#todoListDiv{
+    background-color: #eae8e4;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 li{
 color: rgb(83, 77, 72);;
 font-weight: bolder; 
 text-align: left;
-}
-
-#todo-form{
-    display: flex;
-}
-
-#user-todo{
- width:80%;
- border-radius: 5px;
- border-right: none;
- border-top-right-radius: 0px;
- border-bottom-right-radius: 0px;
 }
 
 #addButton{
@@ -65,11 +78,10 @@ text-align: left;
    border-bottom-left-radius: 0px;
 }
 
-.form-fields{
-    padding: 5px;
-    color:  rgb(236, 232, 226);
-    font-weight: bolder;
-    font-size:small;
+#clearButtonDiv{
+    margin:20px 0px;
+    justify-content: center;
+    display: flex;
 }
 
 #clear{
@@ -79,19 +91,7 @@ text-align: left;
    border-radius: 5px; 
 }
 
-#button-clear-div{
-    margin:20px 0px;
-    justify-content: center;
-    display: flex;
-}
-
-#todo-list-div{
-    background-color: #eae8e4;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.todo-item{
+.todoItem{
     list-style-type: none;
     padding: 10px;
     margin: 0px 40px 0px 0px;  

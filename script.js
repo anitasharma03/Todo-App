@@ -1,11 +1,11 @@
 window.onload = function () {
-    document.getElementById('personal-link').click();
+    document.getElementById('PersonalLink').click();
 };
 
 var form = document.querySelector('form');
 var todoList = document.querySelector('ul');
 var button = document.getElementById('clear');
-var input = document.getElementById('user-todo');
+var input = document.getElementById('userTodo');
 var addButton = document.getElementById('addButton');
 var personalHeading = document.getElementById('personalHeading');
 var professionalHeading = document.getElementById('professionalHeading');
@@ -49,7 +49,7 @@ function updateUI() {
 
 var todoMaker = function (text) {
     var todo = document.createElement('li');
-    todo.classList.add('todo-item')
+    todo.classList.add('todoItem')
     todo.textContent = text;
     todoList.appendChild(todo);
 }
